@@ -1,19 +1,23 @@
-function displayprod() {
-  let firstNum = Number(document.getElementById('firstNum').innerHTML)
-  let secondNum = Number(document.getElementById('secondNum').innerHTML)
+function displaySum() {
+    let firstNum = Number(document.getElementById('firstNum').innerText);
+    let secondNum = Number(document.getElementById('secondNum').innerText);
 
-  let total = firstNum * secondNum;
-  document.getElementById("product").innerHTML = ` ${firstNum} + ${secondNum}, equals to ${total}` ;
+    let total = firstNum + secondNum;
+    document.getElementById("answer").innerText = The sum is: ${total};
 }
 
-document.getElementById('multiplyButton').addEventListener("click", displayprod);
+function displayMultiply() {
+    let firstNum = Number(document.getElementById('firstNum').innerText);
+    let secondNum = Number(document.getElementById('secondNum').innerText);
 
-function displaydiff() {
-  let firstNum = Number(document.getElementById('firstNum').innerHTML)
-  let secondNum = Number(document.getElementById('secondNum').innerHTML)
-
-  let total = firstNum - secondNum;
-  document.getElementById("difference").innerHTML = ` ${firstNum} + ${secondNum}, equals to ${total}` ;
+    let product = firstNum * secondNum;
+    document.getElementById("answer").innerText = The product is: ${product};
 }
 
-document.getElementById('subButton').addEventListener("click", displaydiff);
+function displaySubtract() {
+    let firstNum = Number(document.getElementById('firstNum').innerText);
+    let secondNum = Number(document.getElementById('secondNum').innerText);
+
+    let difference = firstNum - secondNum;
+    document.getElementById("answer").innerText = The difference is: ${difference};
+}
