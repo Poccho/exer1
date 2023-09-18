@@ -1,23 +1,15 @@
-function displaySum() {
-    let firstNum = Number(document.getElementById('firstNum').innerText);
-    let secondNum = Number(document.getElementById('secondNum').innerText);
-
-    let total = firstNum + secondNum;
-    document.getElementById("answer").innerText = The sum is: ${total};
+function appendToDisplay(value) {
+    document.getElementById('display').value += value;
 }
 
-function displayMultiply() {
-    let firstNum = Number(document.getElementById('firstNum').innerText);
-    let secondNum = Number(document.getElementById('secondNum').innerText);
-
-    let product = firstNum * secondNum;
-    document.getElementById("answer").innerText = The product is: ${product};
+function clearDisplay() {
+    document.getElementById('display').value = '';
 }
 
-function displaySubtract() {
-    let firstNum = Number(document.getElementById('firstNum').innerText);
-    let secondNum = Number(document.getElementById('secondNum').innerText);
-
-    let difference = firstNum - secondNum;
-    document.getElementById("answer").innerText = The difference is: ${difference};
+function calculate() {
+    try {
+        document.getElementById('display').value = eval(document.getElementById('display').value);
+    } catch (error) {
+        document.getElementById('display').value = 'Error';
+    }
 }
