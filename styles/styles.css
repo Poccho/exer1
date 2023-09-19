@@ -26,11 +26,11 @@ input {
  color: hsl(0, 0%, 100%);
 }
 
-button:hover {
+input:hover {
  box-shadow: rgb(201, 46, 70) 0px 7px 0px 0px;
 }
 
-button:active {
+input:active {
  background-color: rgb(50, 168, 80);
  /*50, 168, 80*/
  box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
