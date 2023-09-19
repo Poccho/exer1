@@ -1,15 +1,9 @@
-function appendToDisplay(value) {
-    document.getElementById('display').value += value;
+function displaySum() {
+  let firstNum = Number(document.getElementById('firstNum').innerHTML)
+  let secondNum = Number(document.getElementById('secondNum').innerHTML)
+
+  let total = firstNum + secondNum;
+  document.getElementById("answer").innerHTML = ` ${firstNum} + ${secondNum}, equals to ${total}` ;
 }
 
-function clearDisplay() {
-    document.getElementById('display').value = '';
-}
-
-function calculate() {
-    try {
-        document.getElementById('display').value = eval(document.getElementById('display').value);
-    } catch (error) {
-        document.getElementById('display').value = 'Error';
-    }
-}
+document.getElementById('sumButton').addEventListener("click", displaySum);
