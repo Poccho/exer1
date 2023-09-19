@@ -14,8 +14,8 @@ em {
   background-color: #000000;
   color: #ffffff;
 }
-button {
- padding: 17px 40px;
+input {
+ padding: 10px 10px;
  border-radius: 10px;
  border: 0;
  background-color: rgb(255, 56, 86);
@@ -31,9 +31,9 @@ button:hover {
 }
 
 button:active {
- background-color: rgb(255, 56, 86);
+ background-color: rgb(50, 168, 80);
  /*50, 168, 80*/
  box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
  transform: translateY(5px);
- transition: 200ms;
+ transition: 100ms;
 }
